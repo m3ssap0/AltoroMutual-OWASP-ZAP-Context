@@ -4,7 +4,7 @@
 <name>AltoroMutual</name>
 <desc/>
 <inscope>true</inscope>
-<incregexes>.*demo\.testfire\.net.*/</incregexes>
+<incregexes>http://demo.testfire.net.*</incregexes>
 <tech>
 <include>Db.MySQL</include>
 <include>Language.PHP</include>
