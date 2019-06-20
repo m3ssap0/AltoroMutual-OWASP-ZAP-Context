@@ -48,6 +48,8 @@
         </postparser>
         <authentication>
             <type>2</type>
+            <loggedin>Sign Off</loggedin>
+            <loggedout>Sign In</loggedout>
             <form>
                 <loginurl>http://demo.testfire.net/login.jsp</loginurl>
                 <loginbody>uid={%username%}&amp;passw={%password%}</loginbody>
