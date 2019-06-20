@@ -1,70 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <configuration>
-<context>
-<name>AltoroMutual</name>
-<desc/>
-<inscope>true</inscope>
-<incregexes>http://demo.testfire.net.*</incregexes>
-<tech>
-<include>Db.MySQL</include>
-<include>Language.PHP</include>
-<include>OS.Linux</include>
-<include>SCM.Git</include>
-<include>WS.Apache</include>
-<exclude>Db</exclude>
-<exclude>Db.Firebird</exclude>
-<exclude>Db.HypersonicSQL</exclude>
-<exclude>Db.IBM DB2</exclude>
-<exclude>Db.Microsoft Access</exclude>
-<exclude>Db.Microsoft SQL Server</exclude>
-<exclude>Db.Oracle</exclude>
-<exclude>Db.PostgreSQL</exclude>
-<exclude>Db.SAP MaxDB</exclude>
-<exclude>Db.SQLite</exclude>
-<exclude>Db.Sybase</exclude>
-<exclude>Language</exclude>
-<exclude>Language.ASP</exclude>
-<exclude>Language.C</exclude>
-<exclude>Language.XML</exclude>
-<exclude>OS</exclude>
-<exclude>OS.MacOS</exclude>
-<exclude>OS.Windows</exclude>
-<exclude>SCM</exclude>
-<exclude>SCM.SVN</exclude>
-<exclude>WS</exclude>
-<exclude>WS.IIS</exclude>
-<exclude>WS.Tomcat</exclude>
-</tech>
-<urlparser>
-<class>org.zaproxy.zap.model.StandardParameterParser</class>
-<config>{"kvps":"&amp;","kvs":"=","struct":[]}</config>
-</urlparser>
-<postparser>
-<class>org.zaproxy.zap.model.StandardParameterParser</class>
-<config>{"kvps":"&amp;","kvs":"=","struct":[]}</config>
-</postparser>
-<authentication>
-<type>2</type>
-<form>
-<loginurl>http://demo.testfire.net/login.jsp</loginurl>
-<loginbody>uid={%username%}&amp;passw={%password%}</loginbody>
-</form>
-</authentication>
-<users>
-<user>1;true;Sm9obiBTbWl0aA==;2;anNtaXRo~RGVtbzEyMzQ=~</user>
-</users>
-<forceduser>1</forceduser>
-<session>
-<type>0</type>
-</session>
-<authorization>
-<type>0</type>
-<basic>
-<header/>
-<body/>
-<logic>AND</logic>
-<code>-1</code>
-</basic>
-</authorization>
-</context>
+    <context>
+        <name>AltoroMutual</name>
+        <desc/>
+        <inscope>true</inscope>
+        <incregexes>http://demo.testfire.net.*</incregexes>
+        <tech>
+            <include>Db.CouchDB</include>
+            <include>Db.Firebird</include>
+            <include>Db.HypersonicSQL</include>
+            <include>Db.IBM DB2</include>
+            <include>Db.Microsoft SQL Server</include>
+            <include>Db.MongoDB</include>
+            <include>Db.MySQL</include>
+            <include>Db.Oracle</include>
+            <include>Db.PostgreSQL</include>
+            <include>Db.SQLite</include>
+            <include>Language.JSP/Servlet</include>
+            <include>Language.XML</include>
+            <include>OS.Linux</include>
+            <include>OS.Windows</include>
+            <include>SCM.Git</include>
+            <include>WS.Tomcat</include>
+            <exclude>Db</exclude>
+            <exclude>Db.Microsoft Access</exclude>
+            <exclude>Db.SAP MaxDB</exclude>
+            <exclude>Db.Sybase</exclude>
+            <exclude>Language</exclude>
+            <exclude>Language.ASP</exclude>
+            <exclude>Language.C</exclude>
+            <exclude>Language.PHP</exclude>
+            <exclude>OS</exclude>
+            <exclude>OS.MacOS</exclude>
+            <exclude>SCM</exclude>
+            <exclude>SCM.SVN</exclude>
+            <exclude>WS</exclude>
+            <exclude>WS.Apache</exclude>
+            <exclude>WS.IIS</exclude>
+        </tech>
+        <urlparser>
+            <class>org.zaproxy.zap.model.StandardParameterParser</class>
+            <config>{"kvps":"&amp;","kvs":"=","struct":[]}</config>
+        </urlparser>
+        <postparser>
+            <class>org.zaproxy.zap.model.StandardParameterParser</class>
+            <config>{"kvps":"&amp;","kvs":"=","struct":[]}</config>
+        </postparser>
+        <authentication>
+            <type>2</type>
+            <form>
+                <loginurl>http://demo.testfire.net/login.jsp</loginurl>
+                <loginbody>uid={%username%}&amp;passw={%password%}</loginbody>
+            </form>
+        </authentication>
+        <users>
+            <user>1;true;Sm9oblNtaXRo;2;anNtaXRo~RGVtbzEyMzQ=~</user>
+        </users>
+        <forceduser>1</forceduser>
+        <session>
+            <type>0</type>
+        </session>
+        <authorization>
+            <type>0</type>
+            <basic>
+                <header/>
+                <body/>
+                <logic>AND</logic>
+                <code>-1</code>
+            </basic>
+        </authorization>
+    </context>
 </configuration>
